@@ -1,0 +1,11 @@
+version: 1
+project:
+  title: Nucleus DevNotes — CC-BY 2026
+  toc:
+    - file: index.md
+    - file: lab-notes-condensate/index.md
+
+site:
+  template: book-theme
+  options:
+    folders: true
