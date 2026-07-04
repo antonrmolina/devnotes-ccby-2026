@@ -15,7 +15,7 @@ keywords:
   - CFPS
   - cytosol assembly
 license: CC-BY-4.0
-thumbnail: figures/kinetics-broccoli-mscarlet.png
+thumbnail: kinetics-broccoli-mscarlet.png
 collections:
   - REVIEW: inferred — nucleus-core, cal-poly
 id: dn-2026-ccby-purexpress-broccoli-mscarlet
@@ -65,14 +65,14 @@ Two positive reactions (+PURE Rep 1 and +PURE Rep 2) were assembled using the vo
 
 Fluorescence was tracked over 4 hours for both the RNA aptamer signal and mScarlet protein production. The plotted data showed increasing fluorescence in the positive reactions, while the no-DNA controls remained close to baseline. This supports successful transcription and translation in the PURExpress reaction and confirms that the observed signal was template-dependent.
 
-:::{figure} figures/kinetics-broccoli-mscarlet.png
+:::{figure} kinetics-broccoli-mscarlet.png
 :label: fig-broccoli-mscarlet-kinetics
 :align: center
 :width: 75%
 Broccoli 2 (48.4 ng/µL) and mScarlet fluorescence kinetics in a PURExpress CFPS reaction. Broccoli fluorescence was monitored as a readout of RNA aptamer transcription, while mScarlet fluorescence was monitored as a readout of protein production.
 :::
 
-REVIEW: source figure was embedded in Word doc as media/image1.png — confirm figures/kinetics-broccoli-mscarlet.png is the extracted and renamed version of this file.
+REVIEW: source figure was embedded in Word doc as media/image1.png — confirm kinetics-broccoli-mscarlet.png is the extracted and renamed version of this file.
 
 # Conclusions
 
