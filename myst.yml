@@ -5,6 +5,7 @@ project:
     - file: index.md
     - file: lab-notes-condensate/index.md
     - file: calpoly-purexpress-broccoli/index.md
+    - file: dn-2026-ccby-purexpress-broccoli2-mscarlet/index.md
 
 site:
   template: book-theme
