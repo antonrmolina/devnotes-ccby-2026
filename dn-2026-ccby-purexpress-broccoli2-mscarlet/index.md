@@ -15,7 +15,7 @@ keywords:
   - fluorescence kinetics
   - cytosol assembly
 license: CC-BY-4.0
-thumbnail: figures/kinetics-broccoli-mscarlet.png
+thumbnail: kinetics-broccoli-mscarlet.png
 collections:
   - REVIEW: inferred — nucleus-core, cal-poly
 id: dn-2026-ccby-purexpress-broccoli2-mscarlet
@@ -86,14 +86,14 @@ REVIEW: Exact read interval (5 or 10 minutes) was not specified in the source �
 
 Fluorescence was tracked over 4 hours for both the RNA aptamer signal and mScarlet protein production. The plotted data showed increasing fluorescence in the positive reactions, while the no-DNA controls remained close to baseline. This supports successful transcription and translation in the PURExpress reaction and confirms that the observed signal was template-dependent.
 
-:::{figure} figures/kinetics-broccoli-mscarlet.png
+:::{figure} kinetics-broccoli-mscarlet.png
 :label: fig-kinetics
 :align: center
 :width: 75%
 Broccoli 2 (48.4 ng/µL) and mScarlet fluorescence kinetics in a PURExpress CFPS reaction. Broccoli fluorescence was monitored as a readout of RNA aptamer transcription, while mScarlet fluorescence was monitored as a readout of protein production.
 :::
 
-REVIEW: Source figure was embedded in Word document as `media/image1.png`. Confirm that `figures/kinetics-broccoli-mscarlet.png` is the correct extracted file. A notebook (`broccoli-mscarlet-kinetics-graph.ipynb`) and source data (`team3-graph-data-with-layout.xlsx`) are present — consider regenerating the figure from the notebook and embedding via glue rather than using a static PNG.
+REVIEW: Source figure was embedded in Word document as `media/image1.png`. Confirm that `kinetics-broccoli-mscarlet.png` is the correct extracted file. A notebook (`broccoli-mscarlet-kinetics-graph.ipynb`) and source data (`team3-graph-data-with-layout.xlsx`) are present — consider regenerating the figure from the notebook and embedding via glue rather than using a static PNG.
 
 # Conclusions and next steps
 
