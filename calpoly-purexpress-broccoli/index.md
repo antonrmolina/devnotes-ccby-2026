@@ -26,9 +26,7 @@ id: dn-2026-ccby-purexpress-cytosol-assembly-broccoli2-mscarlet
 
 # Context
 
-This DevNote characterizes a standard PURExpress cell-free protein synthesis (CFPS) reaction using a Broccoli 2 RNA aptamer and mScarlet reporter plasmid. The goal was to determine whether transcription and translation could be detected in real time by fluorescence in a defined, reconstituted cytosol. The reaction employed the creatine phosphate/creatine kinase (CP/CK) energy regeneration system built into PURExpress Solution A. A no-DNA negative control was included to verify that fluorescence signals depended on template-driven expression rather than background or instrument noise.
-
-This experiment follows the CHEM 471 Experiment 1 cytosol assembly workflow and serves as a foundational characterization step for the Nucleus synthetic-cell platform. Establishing reliable cytosol performance in bulk solution is a prerequisite for subsequent work in which cytosol is encapsulated inside membrane compartments and tested under confined-volume conditions.
+This DevNote characterizes a standard PURExpress cell-free protein synthesis reaction using a Broccoli 2 RNA aptamer and mScarlet reporter plasmid. The goal was to test whether transcription and translation could be detected in real time by fluorescence in a defined reconstituted cytosol. The reaction used the CP/CK energy regeneration system built into standard PURExpress Solution A and included a no-DNA negative control to confirm that fluorescence depended on template-driven expression rather than background or instrument noise. This experiment follows the CHEM 471 Experiment 1 cytosol assembly workflow and supports later synthetic-cell work where cytosol performance is tested inside membrane compartments.
 
 # Methods
 
@@ -84,11 +82,11 @@ Two conditions were prepared: a positive reaction containing DNA template (+PURE
 
 ## Assembly
 
-PURExpress Solution A and Solution B were retrieved from -20 °C storage and thawed on ice for 5–10 minutes. All components were kept on ice during reaction assembly. Solution B was handled gently and was not vortexed because it contains intact ribosomes. Reaction tubes were labeled for two positive replicates (+PURE Rep 1, +PURE Rep 2) and one no-DNA negative control. Components were added in the order shown in the composition tables above; each reaction was mixed by gentle pipetting (10–15 strokes) until homogeneous and clear, then briefly centrifuged to collect liquid at the tube bottom and remove bubbles. Assembled reactions were held on ice before plating.
+PURExpress Solution A and Solution B were retrieved from -20 °C storage and thawed both on ice for 5-10 minutes. All components were kept on ice during reaction assembly. Solution B was handled gently because it contains ribosomes and should not be vortexed. Reaction tubes were labeled for two positive +PURE reactions and one no-DNA negative control. Solution A, Solution B, RNase inhibitor, DNA template where applicable, nuclease-free water, and DFHBI were added according to the reaction setup table. Each reaction was mixed gently by pipetting up and down 10-15 times until homogeneous and clear. Tubes were briefly spun in a minicentrifuge to collect liquid and remove bubbles, then assembled reactions were held on ice before plating.
 
 ## Plate reader setup
 
-Reactions were transferred to a black 384-well optical plate according to the assigned plate map. Technical duplicate wells were used for positive reactions; the no-DNA control was included on the same plate. Fluorescence kinetics were measured for approximately 4 hours at 30 °C (excitation 485 nm, emission 528 nm) with reads acquired every 5–10 minutes.
+Reactions were transferred to a black 384-well optical plate according to the assigned plate map. Technical duplicate wells were used for positive reactions when possible and the no-DNA control was included. Fluorescence kinetics were measured for approximately 4 hours. The lab manual plate reader settings for this experiment were excitation 485 nm, emission 528 nm, 30 °C, and reads every 5-10 minutes.
 
 Raw fluorescence data and the plate layout are provided in `team3-graph-data-with-layout.xlsx`. Kinetics curves were plotted using the Jupyter notebook `broccoli-mscarlet-kinetics-graph.ipynb`, which contains pre-committed PNG output. **REVIEW:** Cell 0 of the notebook raises a runtime error; the pre-committed figure output should be treated as definitive until the runtime issue is resolved.
 
@@ -97,10 +95,10 @@ Raw fluorescence data and the plate layout are provided in `team3-graph-data-wit
 :::{figure} figures/kinetics-broccoli-mscarlet.png
 :label: fig-kinetics
 :width: 75%
-Broccoli 2 and mScarlet fluorescence kinetics in a PURExpress CFPS reaction. Broccoli 2 fluorescence (excitation 485 nm, emission 528 nm) reports RNA aptamer transcription, while mScarlet fluorescence reports protein translation. Positive reactions (+PURE) are shown alongside the no-DNA negative control over a ~4-hour read period at 30 °C. **REVIEW:** The original source caption describes the DNA template as "48.4 ng/µL," which is the stock concentration; the final concentration in the reaction was approximately 5 ng/µL. Caption should be updated to reflect the final concentration before publication.
+Broccoli 2 (48.4 ng/µL) and mScarlet fluorescence kinetics in a PURExpress CFPS reaction. Broccoli fluorescence was monitored as a readout of RNA aptamer transcription, while mScarlet fluorescence was monitored as a readout of protein production. **REVIEW:** "48.4 ng/µL" is the stock concentration; the final concentration in the reaction was approximately 5 ng/µL. Caption should be updated to reflect the final concentration before publication.
 :::
 
-Fluorescence increased progressively over the four-hour measurement window in both +PURE replicates, consistent with active transcription and translation within the PURExpress system ({ref}`fig-kinetics`). The Broccoli 2 signal, which reports on RNA aptamer accumulation, and the mScarlet signal, which reports on fluorescent protein production, both rose above the no-DNA control, which remained near baseline throughout the experiment. The absence of signal in the no-DNA condition confirms that the fluorescence observed in positive reactions was strictly template-dependent and not attributable to reagent autofluorescence or non-specific DFHBI binding. These results establish that the assembled PURExpress cytosol supports coupled transcription–translation under the conditions tested.
+Fluorescence was tracked over 4 hours for both the RNA aptamer signal and mScarlet protein production ({ref}`fig-kinetics`). The plotted data showed increasing fluorescence in the positive reactions, while the no-DNA controls remained close to baseline. This supports successful transcription and translation in the PURExpress reaction and confirms that the observed signal was template-dependent.
 
 # Specification
 
@@ -118,7 +116,7 @@ The following parameters are sufficient to reproduce the core experiment:
 | Plate format | Black 384-well optical plate |
 | Incubation temperature | 30 °C |
 | Read duration | ~4 hours |
-| Read interval | 5–10 minutes |
+| Read interval | 5-10 minutes |
 | Excitation wavelength | 485 nm |
 | Emission wavelength | 528 nm |
 
