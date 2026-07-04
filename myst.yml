@@ -4,6 +4,7 @@ project:
   toc:
     - file: index.md
     - file: lab-notes-condensate/index.md
+    - file: calpoly-purexpress-broccoli/index.md
 
 site:
   template: book-theme
