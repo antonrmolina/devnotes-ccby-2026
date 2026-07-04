@@ -6,6 +6,7 @@ project:
     - file: lab-notes-condensate/index.md
     - file: calpoly-purexpress-broccoli/index.md
     - file: dn-2026-ccby-purexpress-broccoli2-mscarlet/index.md
+    - file: dn-2026-ccby-purexpress-cytosol-broccoli-mscarlet/index.md
 
 site:
   template: book-theme
