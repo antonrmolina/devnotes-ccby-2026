@@ -11,6 +11,7 @@ project:
     - file: dn-2026-152dc4d0/index.md
     - file: dn-2026-a0e0cd8b/index.md
     - file: dn-2026-ec8ede9a/index.md
+    - file: dn-2026-f79bbe13/index.md
 
 site:
   template: book-theme
