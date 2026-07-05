@@ -9,6 +9,7 @@ project:
     - file: dn-2026-ccby-purexpress-cytosol-broccoli-mscarlet/index.md
     - file: dn-2026-ccby-purexpress-broccoli-mscarlet/index.md
     - file: dn-2026-152dc4d0/index.md
+    - file: dn-2026-a0e0cd8b/index.md
 
 site:
   template: book-theme
