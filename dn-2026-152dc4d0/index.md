@@ -1,24 +1,24 @@
 ---
 title: "PURExpress Cytosol Assembly with Broccoli 2/mScarlet Reporter"
 description: |
-  A PURExpress cell-free protein synthesis reaction using a Broccoli 2 RNA aptamer and mScarlet reporter plasmid was assembled to test whether transcription and translation could be detected in real time by fluorescence; increasing fluorescence in positive reactions and baseline signal in no-DNA controls confirmed template-dependent expression over 4 hours.
+  A standard PURExpress cell-free protein synthesis reaction using a Broccoli 2 RNA aptamer and mScarlet reporter plasmid was assembled to test whether transcription and translation could be detected in real time by fluorescence in a defined reconstituted cytosol.
 date: 2026-04-03
 authors:
-  - name: henry henry
+  - name: Mbappe
     affiliation: b.next
     email: antonmolina@bnext.bio
 keywords:
   - cell-free protein synthesis
   - PURExpress
-  - Broccoli 2
+  - Broccoli aptamer
   - mScarlet
-  - RNA aptamer
+  - CFPS
   - cytosol assembly
 license: CC-BY-4.0
 thumbnail: kinetics-broccoli-mscarlet.png
 collections:
   - REVIEW: inferred — nucleus-core, cal-poly
-id: dn-2026-ccby-purexpress-cytosol-assembly-with-broccol-18f45a
+id: dn-2026-152dc4d0
 ---
 
 # Overview
@@ -27,32 +27,42 @@ This DevNote characterizes a standard PURExpress cell-free protein synthesis rea
 
 # Methods
 
+## Reagents
+
+| Component | Description | Storage |
+| --- | --- | --- |
+| PURExpress Solution A | PURExpress Solution A with CP/CK energy system (New England Biolabs) | -20 °C; thaw and hold on ice |
+| PURExpress Solution B | PURExpress ribosome solution (New England Biolabs) | -20 °C; thaw and hold on ice; do not vortex |
+| RNase inhibitor | RNase inhibitor | — |
+| DNA template | Broccoli 2 mScarlet DNA template, 48.4 ng/µL | — |
+| DFHBI | Fluorogen for Broccoli aptamer | — |
+| Nuclease-free H2O | Nuclease-free water | — |
+| 384-well plate | Black optical 384-well plate | — |
+
 ## Reaction composition
 
-:::{table} PURExpress reaction composition for Broccoli 2/mScarlet expression
+:::{table} PURExpress reaction composition for Broccoli 2/mScarlet CFPS. Two positive replicates (+PURE Rep 1 and Rep 2) and one no-DNA negative control (-PURE Control) were assembled. Total reaction volume was 20 µL per well.
 :label: tbl-reaction-composition
 :align: center
 
-| Component | Input concentration | Unit | Final concentration | Unit | Volume for one reaction (µL) |
-| --- | --- | --- | --- | --- | --- |
-| PURExpress Solution A | — | — | — | — | 8.0 |
-| PURExpress Solution B | — | — | — | — | 6.0 |
-| RNase inhibitor | — | — | — | — | 0.5 |
-| DNA template: Broccoli 2 mScarlet | 48.4 | ng/µL | ~5 | ng/µL | 2.1 |
-| Nuclease-free H2O | — | — | — | — | 1.43 |
-| DFHBI | — | — | — | — | 2.0 |
-| Total | | | | | 20.0 |
+| Component | Input concentration | Unit | Final concentration | Unit | +PURE Rep 1 (µL) | +PURE Rep 2 (µL) | -PURE Control (µL) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Solution A | — | — | — | — | 8.0 | 8.0 | 8.0 |
+| Solution B | — | — | — | — | 6.0 | 6.0 | 6.0 |
+| RNase inhibitor | — | — | — | — | 0.5 | 0.5 | 0.5 |
+| DNA template: Broccoli 2 mScarlet | 48.4 | ng/µL | ~5 | ng/µL | 2.1 | 2.1 | 0 |
+| Nuclease-free H2O | — | — | — | — | 1.43 | 1.43 | 3.5 |
+| DFHBI | — | — | — | — | 2.0 | 2.0 | 2.0 |
+| Total | | | | | 20 | 20 | 20 |
 
 :::
-
-The no-DNA negative control replaced the 2.1 µL DNA template with an additional 2.1 µL nuclease-free H2O (total H2O = 3.5 µL) and omitted the DNA template entirely.
 
 ## Assembly
 
 1. Retrieved PURExpress Solution A and Solution B from -20 °C storage and thawed both on ice for 5–10 minutes.
 2. Kept all components on ice during reaction assembly. Solution B was handled gently because it contains ribosomes and should not be vortexed.
 3. Labeled reaction tubes for two positive +PURE reactions and one no-DNA negative control.
-4. Added Solution A, Solution B, RNase inhibitor, DNA template where applicable, nuclease-free water, and DFHBI according to the reaction composition table.
+4. Added Solution A, Solution B, RNase inhibitor, DNA template where applicable, nuclease-free water, and DFHBI according to the reaction setup table.
 5. Mixed each reaction gently by pipetting up and down 10–15 times until homogeneous and clear.
 6. Briefly spun tubes in a minicentrifuge to collect liquid and remove bubbles, then held assembled reactions on ice before plating.
 
@@ -67,15 +77,17 @@ The no-DNA negative control replaced the 2.1 µL DNA template with an additional
 Fluorescence was tracked over 4 hours for both the RNA aptamer signal and mScarlet protein production. The plotted data showed increasing fluorescence in the positive reactions, while the no-DNA controls remained close to baseline. This supports successful transcription and translation in the PURExpress reaction and confirms that the observed signal was template-dependent.
 
 :::{figure} kinetics-broccoli-mscarlet.png
-:label: fig-kinetics-broccoli-mscarlet
+:label: fig-broccoli-mscarlet-kinetics
 :align: center
 :width: 75%
 Broccoli 2 (48.4 ng/µL) and mScarlet fluorescence kinetics in a PURExpress CFPS reaction. Broccoli fluorescence was monitored as a readout of RNA aptamer transcription, while mScarlet fluorescence was monitored as a readout of protein production.
 :::
 
+REVIEW: The source figure was embedded in the Word document as `media/image1.png`. Confirm that `figures/kinetics-broccoli-mscarlet.png` has been extracted and renamed from the pandoc output before publishing. The file `kinetics-broccoli-mscarlet.png` is listed in the file inventory and should be used if it is the same figure.
+
 # Conclusions and next steps
 
-This experiment demonstrated that a PURExpress cell-free protein synthesis reaction assembled from Solution A and Solution B supports both RNA aptamer transcription (Broccoli 2) and protein translation (mScarlet), with fluorescence signal dependent on the presence of a DNA template. These findings establish a baseline cytosol performance benchmark for the CHEM 471 Experiment 1 workflow. Next steps include testing this cytosol formulation inside membrane compartments to assess encapsulation efficiency and expression yield in a synthetic-cell context.
+A PURExpress cell-free protein synthesis reaction with a Broccoli 2/mScarlet dual reporter was successfully assembled and monitored by fluorescence kinetics over 4 hours. Template-dependent transcription and translation were confirmed by comparison to a no-DNA negative control. These findings establish a baseline cytosol performance benchmark that can be carried forward into membrane-encapsulated synthetic-cell experiments.
 
 # References
 
